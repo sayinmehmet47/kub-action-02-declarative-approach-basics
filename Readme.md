@@ -1,6 +1,5 @@
 KUBERNETES COMMANDS
 
-
 docker build -t kub-first-app . 
 kubectl create deployment first-app --image=kub-first-app  
 
@@ -71,7 +70,6 @@ CHANGE REPLICAS AND PODS AND DEPLOY AGAIN
 MERGE THE SERVICES AND DEPLOYMENT
 
 
-
 SEND THE LAST CHANGES AND GRAB THEM WITH IMAGE POLICY ALWAYS
 
 docker build -t sayinmehmet47/kub-first-app:2 .
@@ -79,22 +77,4 @@ docker push sayinmehmet47/kub-first-app:2
  kubectl apply -f=masterdeployment.yaml
 docker build -t sayinmehmet47/kub-first-app:2 .
 docker push sayinmehmet47/kub-first-app:2  
-
-Fd
-Fdfds
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+kubectl delete  -f=masterdeployment.yaml 
